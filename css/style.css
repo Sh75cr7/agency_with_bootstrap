@@ -298,58 +298,79 @@ padding-bottom: 30px;
 
 /* <!-- Why You Should Choose Agenc    end --> */
 /* <!-- Some Client Reviews  start--> */
-.qoute{
-    top: 54px;
-    left: 58px;
+#reviews{
+   margin-bottom: 227px;
 }
-  .customer__item{
-    box-shadow: 4px 4px 4px 4px rgba(0.5, 0.5, 0.5, 0.75);
-
-    border-radius: 30px;
-    padding: 54px;
+.review__row{
     margin-top: 130px;
-    margin-bottom: 227px;
-  }
-  .customer__p{
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 36px;
-    color: #7B7B7B;
-    width: 307px;
-  }
-  .customer__ul{
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-  }
-  .customer__ul li{
-    list-style: none;
-    display:inline-block;
-    color: #FBBF25;
-    margin-right: 5px;
-  }  
-  .name{
-    font-weight: 600;
+}
+.review__item{
+    padding: 54px 58px;
+    border-radius: 30px;
+    border: 1px solid #F4EFEF;
+}
+.review__item__p{
+   
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: #7B7B7B;
+width: 307px;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.review__item__center{
+    background: #F4EFEF;
+    border: transparent;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .25);
+}
+.review__item__icon{
+    display: flex;
+    gap: 7px;
     font-size: 20px;
-    line-height: 27px;
-    color: #232323;
-    margin-top: 30px;
-}   
-h4{
+    color: #F9BD2C;
+    margin-bottom: 30px;
+}
+.review__item__icon{
+    list-style: none;
+}
+.review__client__text__h5{
+    font-size: 20px;
     font-weight: 400;
+    line-height: 24px;
+    color:#232323 ;
+}
+.review__client__text__h6{
     font-size: 16px;
+    font-weight: 400;
     line-height: 26px;
-    color: #7B7B7B;
-}  
-.name__text{
+    color:#7B7B7B ;
+}
+.review__item__client{
+    display: flex;
+    align-items: center;
     gap: 20px;
-}  
-.name__text img{
-  height: 47px;
-  width: 47px;
-  margin-top: 32px;
-} 
+}
+.btn__prev{
+opacity: 1 !important;
+top: 135px;
+left: -95px;
+}
+.btn__next{
+opacity: 1 !important;
+top: 135px;
+right: -95px;
+}
+.review__icon__prevnext i{
+    font-size: 16px;
+    color: #F3F3F3;
+    background: #337FFF;
+    padding: 20px 20px;
+    border-radius: 50%;
+
+}
+/* <!-- Some Client Reviews ending --> */
 
 /* <!-- Some Client Reviews ending --> */
 
