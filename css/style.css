@@ -31,25 +31,55 @@ body{
     margin: 0 auto;
 }
 /* common part end */
-nav ul li a{
+
+/* background-position: center; */
+.bgimage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/agenc-Banner1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center-bottom;
+}
+.bgimage::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.nav__item__position{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.nav__a{
     text-decoration: none;
-    color:#FFFFFF ;
+    color:#FFFFFF;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     margin-left: 50px;
+    background-color: transparent;
+
     
 }
-nav ul li a:hover{
-    color: #6A4DF4;
+.nav__li a:hover{
+       color: #6A4DF4;
+    
+}
+nav ul{
+    margin-top: 58PX;
+
 }
 .nav__image{
     margin-top: 56PX;
-}
-nav ul{
-    margin-top: 65PX;
- 
-   
 }
 .nav__right{
     text-decoration: none;
@@ -63,33 +93,18 @@ nav ul{
     margin-top: 51px;
    
 }
-header{
-
-    background-image: url('../images/agenc-Banner1.png' );
-   background-size: cover;
-/* background-position: center; */
-
-height: 100vh;
-
-}
-
-
-/* banner part start */
-
-.banner__text{
-    text-align: center;
-   
-}
 .banner_text__h1{
     font-weight: 700;
     line-height: 90px;
     font-size: 75px;
     color: #FFFFFF;
     width: 950px;
-   
-    margin: 0 auto;
-    margin-bottom: 51px;
-    padding-top: 224px;
+   position: absolute;
+text-align: center;
+   width: 950px;
+  left: 325px;
+  top: 315px;
+  margin: 0 auto;
 }
 .banner_text__p{
     font-weight: 400;
@@ -98,7 +113,12 @@ height: 100vh;
     color: #FFFFFF;
     width: 621px;
     margin: 0 auto;
-    margin-bottom: 40px;
+ 
+    position: absolute;
+    top: 546px;
+    left: 491px;
+    text-align: center;
+    
 }
 .banner__button{
     background: #6A4DF4;
@@ -112,61 +132,68 @@ height: 100vh;
     margin-bottom: 175px;
     display: inline-block;
     text-decoration: none;
+    position: absolute;
+    left: 701px;
+    top:665px ;
 }
-/*      <!-- Our Success start --> */
+.dotted{
+    display: flex;
+bottom: 42px;
+left: 749px;
+gap: 2px;
+opacity: 1px;
+position: absolute;
 
-.success__start{
+}
+
+
+
+/* banner part start */
+
+
+/*      <!-- Our Success start --> */
+#success{
+    margin-top: 170px;
+    margin-bottom: 149px;
+}
+.success__wrapper{
     background: #E0FFF9;
     border-radius: 20px;
-   height: 300px;
-   margin-top: 172px;
-   margin-bottom: 150px;
+    width: 100%;
+    padding: 85px 0px 85px 50px;
 }
-.success__design{
-    position: relative;
-  
-   
-}
-.success__part{
-    width: 387px;
-    height:129px ;
-    margin-top: 85px;
-    margin-bottom: 86px;
-    margin-left: 50px;
-    
-    position: absolute;
-}
-.success__part__h5{
-    color: #6A4DF4;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    margin-bottom: 15px;
-}
-.success__part__h2{
-    font-weight: 600;
-    font-size: 35px;
- color: #151515;
+.success__item__h5{
+ 
+font-size: 25px;
+font-weight: 500;
+line-height: 30px;
+margin-bottom: 15px;
+color: #337FFF;
 
 }
-.success__reviw{
-    height: 105px;
-    width: 184px;
-    margin-top: 98px;
+.success__item__h4{
+   
+font-size: 35px;
+font-weight: 600;
+line-height: 42.36px;
+
+
 }
-.success__reviw h2{
-    font-weight: 700;
-    font-size: 50px;
-    color: #151515;
+.success__item__h3{
+
+font-size: 50px;
+font-weight: 700;
+line-height: 60.51px;
+color: #151515;
+margin-bottom: 20px;
+
 }
-.success__reviw p{
+.success__item__h6{
+     font-size: 20px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    color: #737373;
-}
-.sucess__right{
-    width: 722px;
+    line-height: 24px;
+    color: #737373;  
+
 }
 /* Our Provided Services start */
 
